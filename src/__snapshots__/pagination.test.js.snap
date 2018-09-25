@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tests pagination Render pagination component  1`] = `
+<ul>
+  <li
+    id="decrement-arrow"
+    onClick={[Function]}
+  >
+    <a>
+      <span>
+         « 
+      </span>
+    </a>
+  </li>
+  <li
+    className=""
+    onClick={[Function]}
+  >
+    <a>
+      1
+    </a>
+  </li>
+  <li
+    className="active"
+    onClick={[Function]}
+  >
+    <a>
+      2
+    </a>
+  </li>
+  <li
+    className=""
+    onClick={[Function]}
+  >
+    <a>
+      3
+    </a>
+  </li>
+  <li
+    id="increment-arrow"
+    onClick={[Function]}
+  >
+    <a>
+      <span>
+         » 
+      </span>
+    </a>
+  </li>
+</ul>
+`;

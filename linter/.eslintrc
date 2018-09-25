@@ -1,0 +1,59 @@
+{
+  "extends": ["airbnb-base", "plugin:react/recommended"],
+  "parser": "babel-eslint",
+  "globals": {
+    "document": true,
+    "expect": true,
+    "it": true,
+    "describe": true,
+    "beforeEach": true,
+    "beforeAll": true,
+    "afterEach": true,
+    "afterAll": true,
+    "jest": true,
+    "localStorage": true,
+    "fetch": true
+  },
+  "plugins": ["require-jsdoc", "jsdoc", "react"],
+  "rules" : {
+    "indent": [
+      2,
+      4,
+      {
+        "SwitchCase": 1
+      }
+    ],
+    "max-len": ["error", 120],
+    "import/no-extraneous-dependencies": ["error", { "devDependencies": true, "optionalDependencies": false }],
+    "no-empty": [2, {"allowEmptyCatch": true}],
+    "no-use-before-define": ["error", { "functions": false, "variables": false}],  //In JavaScript, prior to ES6, variable and function declarations are hoisted to the top of a scope
+    "require-jsdoc": [2, {
+      "require": {
+        "FunctionDeclaration": true,
+        "MethodDefinition": true,
+        "ClassDeclaration": true,
+        "ArrowFunctionExpression": true,
+        "FunctionExpression": true
+      }
+    }],
+    "valid-jsdoc": [2, {
+      "prefer": {
+        "return": "returns"
+      },
+      "requireReturn": false,
+      "requireReturnDescription": false,
+      "requireReturnType": true
+    }],
+    "import/prefer-default-export": "off",
+    "import/no-named-as-default": "off",
+    "react/no-find-dom-node": "off",
+    "react/display-name": "off",
+    "no-param-reassign": "off"
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.0"
+    }
+  }
+}
